@@ -1,0 +1,7 @@
+1. After deploying to Vercel and setting env vars (DATABASE_URL, JWT_SECRET), run migrations and seed:
+   npx prisma migrate deploy
+   node prisma/seed.js
+
+2. Use Postman collection file 'Multitenant Notes.postman_collection.json'. Set variable 'baseUrl' to your Vercel URL (e.g. https://your-project.vercel.app).
+
+3. Login with admin@acme.test (password: password) to get token, then use it for protected endpoints.
